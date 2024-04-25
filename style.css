@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    background-color: #009e5f;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_nav {
+    margin-left: 45px;
+    width: 50%; 
+    height: 200%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.left_nav img {
+    height: 100px;
+    overflow: hidden;
+}
+
+.right_nav {
+    margin-top: 15px;
+    margin-right: 25px;
+}
+
+.right_nav a{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+.right_nav a :hover {
+    color: black;
+}
+/* main_tag */
+
+.main_div {
+    display: flex;
+    align-items: center;
+    height: 700px;
+}
+
+.left_main {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.left_main img {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.left_main h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #009e5f;
+}
+
+.left_main input {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin: 10% 20% 20% 26%;
+    background-color: white;
+    border: 3px solid #009e5f;
+    color: #009e5f;
+}
+
+.left_main:hover input {
+    color: white;
+    background-color: #009e5f;
+    animation: color-full 200ms ease-out forwards;
+}
+
+
+.right_main {
+    width: 70%;
+    height: 100%;
+    background-color: black;
+}
+
+.right_main img{
+    padding: 25% 0% 0% 45%;
+}
+
+.right_main {
+    background-image: url("https://www.7up.com/images/products/slider/7up_featured.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+}
+
+.home{
+    height: 900px;
+    background-image: url("https://www.7up.com//images/simple-7up/7up-simple-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.home .content{
+    max-width: 60rem;
+    padding-left: 8%;
+}
+
+.home .content span{
+    font-size: 70px;
+    font-weight: bold;
+    display: block;
+    margin-top: 8%;
+    color: white;
+    padding:0px 0px 10px 0px;
+}
+
+.home .content h2{
+    color:white;
+    font-size: 26px;
+    padding:0px 0px 10px 0px;
+}
+
+.btn_1{
+    background: none;
+    border: 3px solid green;
+    font-family: 'Gill Sans',sans-serif;
+    padding: 12px 20px;
+    margin: 30px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    color: green;
+    position: relative;
+}
+
+.btn_1 :hover{
+    color: white;
+}
+
+.btn_1 ::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+    z-index: -1;
+    transition: transfrom 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.btn_1::before{
+    transform: scaleX(0);
+}
+
+.btn_1 :hover ::before{
+    transform: scaleX(1);
+}
+
+.about {
+    min-height: 100vh;
+    background-image: url("https://www.7up.com/images/modules/module_cocktail.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+ 
+}
+
+
+.about .content-1 a{
+    min-width: 60rem;
+    background-color: rgb(195, 56, 79);
+    padding: 1rem;
+    font-size: 50px;
+    margin-left: 450px;
+    text-decoration:none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+.box{
+    min-height: 100vh;
+    background-image: url("https://www.7up.com/images/modules/module_cooking.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat ;
+    display: flex;
+    align-items: center;
+}
+
+.box .content-2 a{
+    min-width: 60rem;
+    background-color: rgb(125,189,64);
+    padding: 1rem;
+    font-size: 50px;
+    margin-left: 450px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.zoom{
+    min-height: 100vh;
+    background-image: url("https://www.7up.com/images/modules/module_seeall.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat ;
+    display: flex;
+    align-items: center;
+}
+
+.zoom .content-3 a{
+    min-width: 60rem;
+    background-color: rgb(159, 71, 241);
+    padding: 1rem;
+    font-size: 50px;
+    margin-left: 450px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row-2{
+    display: flex;
+}
+
+.left_side .right_side{
+    height: 100vh;
+    width: 90%; 
+}
+
+.row-2 .left_side h2{
+    color: green;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-left: 5px;
+}
+
+.row-2 .left_side img{
+    height: auto;
+    width: 200px;
+    padding-top: 10rem;
+    padding-left: 100px;
+}
+
+.row-2 .left_side_1 img{
+    padding-left: 50px;
+    padding-top: 10rem;
+    display: flex;
+    width: 200px;
+}
+
+.row-2 .left_side_2 img{
+    padding-top: 10rem;
+    display: flex;
+    width: 200px;
+}
+
+.row-2 .left_side_4 img{
+    padding-top: 10rem;
+    display: flex;
+    width: 200px;
+}
+
+.right_side{
+    background-color: rgba(233,217, 217, 0.633);
+    width: 50%;
+}
+
+.right_side h1{
+    font-weight: bold;
+    font-size: 80px;
+    color: rgb(12, 157, 97);
+    padding-left: 100px;
+    padding-top: 80px;
+}
+
+.right_side p{
+    color: grey;
+    padding-left: 40px;
+    margin-left: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right_side img{
+    width:50%;
+    padding-left:150px;
+}
+
+.row-2 .left_side_3 img{
+    width: 300px;
+    padding-top: 10rem;
+    padding-left: 80px;
+    padding-right: 30px;
+}
+footer {
+    width: 100%;
+    height: 800px;
+    padding-top: 25px;
+    background-image: url("https://www.7up.com/images/footer-bg.jpg");
+    background-size: cover;
+}
+
+.text {
+    width: 500px;
+    height: 50px;
+    margin: 8% 50%;
+}
+
+.text h1 {
+    text-align: center;
+    background-color: red;
+    transform: matrix(1, -0.4513, 0, 1, 21.8691, 152.353);
+    font-size: 80px;
+    color: white;
+}
+.over_the_footer {
+    margin-left: 250px;
+    margin-top: 400px;
+    width: 70%;
+    height: 150px;
+    background-color: rgba(245, 245, 245, 0.658);
+}
+ 
+.footer {
+    margin: 5px;
+}
+
+.first_line {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.first_line a{
+    text-decoration: none;
+    color: #636363;
+    
+    padding: 0px 5px;
+    font-size: 25px;
+}
+
+.middle_line {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.middle_line a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #636363;
+    padding: 0px 5px;
+}
+
+.last_line {
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    color: #636363;
+}
